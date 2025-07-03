@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+/* NavBar */
+.navbar {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.navbar a {
+  color: #da0166;
+}
+/* Introduction */
+.Intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 150px;
+  margin-bottom: 80px;
+}
+
+.Intro-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.Intro h1 {
+  color: #da0166;
+  font-size: 40px;
+}
+.Intro p {
+  font-size: 20px;
+}
+
+.Intro-left span {
+  color: #61b201;
+  font-weight: bold;
+}
+.Social-icons {
+  display: flex;
+  gap: 40px;
+}
+.fa-linkedin {
+  color: rgb(32, 95, 212);
+}
+.fa-facebook {
+  color: rgb(32, 95, 212);
+}
+.fa-square-instagram {
+  color: #e961a0;
+}
+.fa-github {
+  color: black;
+}
+.Intro-Right img {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 6px rgba(133, 146, 176, 0.75);
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* Eductaion */
+.Education {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.Education_heading {
+  color: #da0166;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.Education_heading:hover {
+  color: #b2017e;
+}
+.Education_card {
+  background-color: #efe8c9;
+  display: flex;
+  width: 1000px;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 40px;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.Education_card h4 {
+  font-size: 25px;
+}
+.Education_card:hover {
+  color: white;
+  background-color: #6f5c05;
+}
+.Education_card img {
+  width: 150px;
+  height: 100px;
+  border-radius: 20px;
+}
+/* projects */
+.projects_heading {
+  color: #da0166;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.projects_heading:hover {
+  color: #b2017e;
+}
+.Projects {
+  background-color: #f6c0d9;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project_card {
+  background-color: #da0166;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 40px;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.project_card:hover {
+  color: #da0166;
+  background-color: white;
+}
+.project_card button {
+  background-color: #f6c0d9;
+  border-radius: 30px;
+  padding: 15px 40px;
+  border: 0px;
+}
+.project_card button:hover {
+  background-color: #da0166;
+  color: white;
+}
+
+/* Skills */
+.Skills_heading {
+  color: #61b201;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 100px;
+  margin-top: 170px;
+}
+.Skills_heading:hover {
+  color: #467f01;
+}
+.Skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 100px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.skill_card {
+  font-size: 30px;
+  color: #61b201;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 40px;
+  box-shadow: 5px 6px 44px 1px #61b201;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.skill_card:hover {
+  color: white;
+  background-color: #61b201;
+  box-shadow: 5px 6px 44px 1px #61b201;
+}
+
+/* Contact  */
+.Contact {
+  background-color: #da0166;
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+/* ALL NIMATIONS */
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
